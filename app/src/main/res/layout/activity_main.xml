@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image_holder"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+    <VideoView
+        android:id="@+id/video_holder"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/pick_image_from_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/pick_img"
+        android:layout_above="@+id/pick_video_from_activity"/>
+
+    <Button
+        android:id="@+id/pick_video_from_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pick_vid"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
